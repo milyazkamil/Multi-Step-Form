@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --white-color: rgb(255, 255, 255);
+  --dark-white: #f2f5fd;
+  --dark-blue: #092b5d;
+  --light-blue: #bee1fe;
+  --black-color: rgb(0, 0, 0);
+  --gray-color: rgb(128, 128, 128);
+  --light-orange: #FFAF7E;
+  --pink-color: #F9818D;
+  --purple-color: #483EFF;
+  --light-purple: #eff2fd;
+  --transparent: transparent;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* START Main Container */
+#main-title {
+  color: var(--dark-blue);
+}
+
+#main-container {
+  height: 100vh;
+  position: relative;
+}
+
+#main-container > .container {
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  max-width: 1000px;
+  max-height: 700px;
+  min-height: 600px;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container > .row {
+  height: 100%;
+}
+/* END Main Container */
+
+
+/* START Steps Section */
+.container > .row > #steps-section {
+  border-radius: 20px;
+  padding-top: 50px;
+  background-image: url(../img/svg1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white-color);
+  height: auto;
+}
+
+.container > .row > #steps-section > div {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.container > .row > #steps-section > div > #step-num-1 {
+  background-color: var(--light-blue);
+  color: var(--black-color);
+}
+
+.container > .row > #steps-section > div > p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 10px;
+  width: 40px;
+  font-size: 20px;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid var(--light-blue);
+}
+
+.container > .row > #steps-section > div > div > p {
+  margin: 0;
+}
+
+.container > .row > #steps-section > div > div > h2 {
+  margin: 0;
+  font-size: 18px;
+}
+/* END Steps Section */
+
+
+/* START Form Info */
+
+/* START Step 2 */
+#svg1 {
+  background-color: var(--light-orange);
+}
+
+#svg2 {
+  background-color: var(--pink-color);
+}
+
+#svg3 {
+  background-color: var(--purple-color);
+}
+
+#arcade, #advanced, #pro {
+border: 1px solid var(--gray-color);
+cursor: pointer;
+}
+
+#switch {
+  width: 40%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+#switch > p {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+}
+
+#switch-div {
+  cursor: pointer;
+  position: relative;
+  width: 80px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: var(--dark-blue);
+}
+
+#switch-circle {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  background-color: var(--white-color);
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease-in;
+}
+/* END Step 2 */
+
+/* START Step 3 */
+#online, #larger, #customizable {
+  border: 1px solid var(--gray-color);
+  cursor: pointer;
+}
+
+.add-ons {
+  width: 20px;
+  height: 20px;
+}
+/* END Step 3 */
+
+/* START Step 4 */
+.step4 {
+  background-color: var(--dark-white);
+}
+
+#total-price {
+  color: var(--purple-color);
+}
+/* END Step 4 */
+
+.container > .row > #form-info > #main > section > input {
+  height: 3.5rem;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+}
+
+.container > .row > #form-info > #main {
+  height: 80%;
+  padding: 0 10%;
+}
+
+.container > .row > #form-info > #main > p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.container > .row > #form-info > #main > section > label {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Hide the default increment and decrement arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.changing-section > label {
+  color: #092b5d;
+}
+/* END Form Info */
+
+
+/* START Footer Section */
+.container > .row > #form-info > #footer {
+  height: 20%;
+  background-color: transparent;
+  padding: 0 10%;
+}
+
+.container > .row > #form-info > #footer > #go-back,
+.container > .row > #form-info > #footer > #next-step {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: var(--white-color);
+  background-color: var(--dark-blue);
+}
+
+#go-back {
+  visibility: hidden;
+}
+/* END Footer Section */
+
+
+/* START Responsive Section */
+@media all and (max-width: 992px) {
+  .container > .row > #form-info > #main {
+    padding: 0 5%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #main-container > .container {
+    padding: 0;
+    margin-top: 0;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+    max-height: 100vh;
+  }
+
+  .container > .row > #steps-section {
+    background-image: url(../img/svg2.svg);
+    height: 30vh;
+    border-radius: 0;
+    padding-top: 40px;
+    align-items: start !important;
+    justify-content: center !important;
+  }
+
+  .container > .row > #steps-section > .row {
+    width: 150px;
+  }
+
+  .container > .row > #form-info {
+    position: relative;
+    height: 70vh;
+    justify-content: center;
+  }
+
+  .container > .row > #form-info > #main {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -15vh;
+    padding: 40px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .container > .row > #form-info > #footer {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    right: 0;
+    padding: 2vh 5vh !important;
+    bottom: 0;
+  }
+}
+
+
+@media all and (max-width: 576px) {
+  .container {
+    padding: 0;
+    margin-top: 0;
+    border-radius: 0;
+  }
+  
+  .container > .row > #form-info > #main {
+    height: auto;
+    width: 90%;
+    border: 1px solid var(--gray-color);
+  }
+}
+
+@media all and (max-width: 440px) {
+  .container > .row > #form-info > #main {
+    width: 100%;
+    padding-top: 10px;
+    border: none;
+  }
+
+  .container > .row > #form-info > #main > p {
+    font-size: 16px !important;
+  }
+
+  .container > .row > #form-info > #main > section > input {
+    height: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .container > .row > #form-info > #footer {
+    padding: 2vh 4vh !important;
+  }
+
+  .container > .row > #form-info > #footer > #next-step,
+  .container > .row > #form-info > #footer > #go-back {
+  font-size: 18px;
+  }
+}
+/* END Responsive Section */
