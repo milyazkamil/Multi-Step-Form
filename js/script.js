@@ -169,11 +169,10 @@ function checkStep(stepNumber) {
     nextStep.style.backgroundColor = "var(--dark-blue)";
     mainTitle.innerHTML = "Personal Info";
     description.innerHTML = "Please provide your name, email, address and phone number.";
+    stepsClear();
     stepNum1.style.color = "var(--black-color)";
     stepNum1.style.backgroundColor = "var(--light-blue)";
     changingSection.innerHTML = step1;
-
-    stepsClear();
 
   } else if (stepNumber === 2) {
     nextStep.style.backgroundColor = "var(--dark-blue)";
